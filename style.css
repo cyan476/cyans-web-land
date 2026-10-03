@@ -1,0 +1,127 @@
+:root {
+    --site-width: 1300px; /* Change this once, updates both automatically */
+}
+
+body {
+    background-image: url('frutigeraero.jpg');
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.welcome-topbar {
+    display: flex;
+    align-items: center;
+    gap: 950px;
+
+    background: linear-gradient(180deg, #061dec 0%, #077ce9 50%, #04eeee 100%);
+    width: var(--site-width);
+    border: 2px solid black;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 8px;
+    font-family: "Segoe UI" , Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.welcome-topbar h1,
+.welcome-topbar p {
+    margin: 0;
+}
+
+.wt-img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.wt-text {
+    margin: 0;
+}
+
+.navbar {
+    margin-left: auto;
+    margin-right: auto;
+    width: var(--site-width);
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #f8f7f7 0%,#69717a 100%);
+    margin-top: 10px;
+    border: 2px solid black;
+    padding-left: 20px;
+    padding-bottom: 0px;
+    padding-top: 3px;
+}
+
+.nb-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    align-items: left;
+}
+
+.nb-ul li {
+    display: inline;
+    margin: 2px 0;
+}
+
+.nb-ul li a {
+    color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nb-tab {
+    box-sizing: border-box;
+}
+
+.contentbox {
+    width: var(--site-width);
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    
+    background: rgba(255, 255, 255, 0.486);
+    border: 2px solid black;
+    padding-left: 8px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 10px;
+}
+
+.cb-maintext {
+    font-family: "Segoe UI" , Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    gap: 900px;
+
+    background: linear-gradient(180deg, #9006ec 0%, #5607e9 50%, #2f04ee 100%);
+    width: var(--site-width);
+    border: 2px solid black;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 8px;
+}
+
+.ft-content {
+    display: flex;
+    justify-content: space-between; /* Pushes text left, button right */
+    align-items: center;            /* Vertically centers them with each other */
+    width: 100%;
+}
+
+.ft-text {
+    color: #fff;
+    font-family: "Segoe UI", Tahoma, sans-serif
+}
+
+.ft-text a {
+    color: #fff;
+}
