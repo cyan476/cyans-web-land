@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Cyan's Web Land</title>
+    <link>https://cyanswebland.nya.je</link>
+    <description>Updates from Cyan's corner of the web.</description>
+
+    <item>
+      <title>Welcome to LAUNCH DAY BABY!!!</title>
+      <description>&lt;p&gt;THE SITES LIVE!!!!&lt;/p&gt;&lt;p&gt;Its officially live now with&lt;/p&gt;&lt;ul&gt;&lt;li&gt;kicya's ddns, nya.je (huge props to them)&lt;/li&gt;&lt;li&gt;new blog, which is working, and is using a rss-to-html parser made in js&lt;/li&gt;&lt;li&gt;and lots more planned!&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;so yeah great job me!! and sub to this rss feed which the link is available on the blog's mainpage!!&lt;/p&gt;</description>
+      <pubDate>Sat, 03 Oct 2026 19:10:00 GMT</pubDate>
+      <guid>post-1</guid>
+    </item>
+
+  </channel>
+</rss>
