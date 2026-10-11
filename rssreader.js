@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
   contentBox.innerHTML = '<div id="rss-feed-root" style="width: 100%;">Loading transmissions...</div>';
   const feedRoot = document.getElementById('rss-feed-root');
 
-  // Fetch and parse the RSS feed
-  fetch('feed.xml')
+  // Fetch and parse the RSS feed with cache revalidation
+  fetch('feed.xml', { cache: 'no-cache' })
     .then(response => {
       if (!response.ok) throw new Error("Feed not found");
       return response.text();
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       items.forEach((item, index) => {
         posts.push({
           id: index,
-          title: item.querySelector('title').textContent,
+          title: decodeHTML(item.querySelector('title').textContent),
           description: decodeHTML(item.querySelector('description').textContent),
           date: item.querySelector('pubDate') ? item.querySelector('pubDate').textContent : ''
         });
