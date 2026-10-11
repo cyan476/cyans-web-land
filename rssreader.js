@@ -2,6 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const contentBox = document.querySelector('.contentbox');
   if (!contentBox) return;
 
+  // Clear out any old mess/placeholders inside contentbox completely on load
+  contentBox.innerHTML = '<div id="rss-feed-root" style="width: 100%;">Loading transmissions...</div>';
+  const feedRoot = document.getElementById('rss-feed-root');
+
   // Fetch and parse the RSS feed
   fetch('feed.xml')
     .then(response => {
@@ -22,25 +26,28 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
 
-      // Function to render the main list of posts
       function renderList() {
-        let html = `<h3>Latest Transmissions</h3><ul class="post-list">`;
+        let html = `
+          <div class="transmissions-container" style="display: flex; flex-direction: column; gap: 10px; width: 100%;">
+            <h3>Latest Transmissions</h3>
+            <ul class="post-list" style="margin: 0; padding-left: 20px;">
+        `;
+        
         posts.forEach(post => {
-          html += `<li><a href="#" data-id="${post.id}" class="post-link">${post.title}</a> <small>(${post.date})</small></li>`;
+          html += `<li style="margin-bottom: 5px;"><a href="#" data-id="${post.id}" class="post-link">${post.title}</a> <small>(${post.date})</small></li>`;
         });
-        html += `</ul>`;
-
-        // Clickable image button (NO anchor tag, impossible to redirect) + feedback text
+        
         html += `
-          <div style="margin-top: 15px; text-align: center;">
-            <img src="button1.png" alt="RSS Feed" id="copy-rss-btn" title="Click to copy RSS feed link" style="border: 0; image-rendering: pixelated; cursor: pointer;">
-            <div id="copy-feedback" style="font-size: 0.85em; margin-top: 5px; color: #555; min-height: 1.2em;"></div>
+            </ul>
+            <div style="margin-top: 15px; display: flex; flex-direction: column; align-items: center; width: 100%;">
+              <img src="button1.png" alt="RSS Feed" id="copy-rss-btn" title="Click to copy RSS feed link" style="border: 0; image-rendering: pixelated; cursor: pointer;">
+              <div id="copy-feedback" style="font-size: 0.85em; margin-top: 5px; color: #555; min-height: 1.2em; text-align: center;"></div>
+            </div>
           </div>
         `;
 
-        contentBox.innerHTML = html;
+        feedRoot.innerHTML = html;
 
-        // Attach click events to the post links
         document.querySelectorAll('.post-link').forEach(link => {
           link.addEventListener('click', (e) => {
             e.preventDefault();
@@ -49,7 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
           });
         });
 
-        // Attach click event directly to the image button for copying
         const copyBtn = document.getElementById('copy-rss-btn');
         const feedback = document.getElementById('copy-feedback');
         
@@ -73,9 +79,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
 
-      // Function to render an individual post view with a Back button
       function renderPost(post) {
-        contentBox.innerHTML = `
+        feedRoot.innerHTML = `
           <button class="contentbox-back-btn" style="margin-bottom: 10px; cursor: pointer;">&larr; Back to Transmissions</button>
           <h2>${post.title}</h2>
           <p><small>${post.date}</small></p>
@@ -88,23 +93,20 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       }
 
-      // Kick it off
       renderList();
     })
     .catch(error => {
       console.error('Error loading feed:', error);
-      contentBox.innerHTML = `<h3>Latest Transmissions</h3><p>Could not load feed.xml locally.</p>`;
+      feedRoot.innerHTML = `<h3>Latest Transmissions</h3><p>Could not load feed.xml locally.</p>`;
     });
 });
 
-// Helper function to decode HTML entities stored in XML descriptions
 function decodeHTML(html) {
   const txt = document.createElement('textarea');
   txt.innerHTML = html;
   return txt.value;
 }
 
-// Bulletproof clipboard fallback function
 function fallbackCopy(text, onSuccess, feedbackEl) {
   const textarea = document.createElement('textarea');
   textarea.value = text;

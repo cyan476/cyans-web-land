@@ -4,6 +4,57 @@
             my webland :D
         </title>
         <link rel="stylesheet" href="style.css">
+        <style>
+        .contentbox {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cb-child {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 8px;
+        }
+
+        .cb-avatarbox {
+            width: 200px;
+            flex-shrink: 0;
+            border: 3px solid black;
+            box-sizing: border-box;
+        }
+
+        .cb-avatarbox img {
+            width: 100%;
+            display: block;
+        }
+
+        .cb-infotext {
+            flex-grow: 1;
+        }
+
+        .cb-about {
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+        }
+
+        .cb-aboutbar {
+            display: flex;
+            align-items: center;
+            width: calc(100% - 16px);
+            height: 60px;
+            padding: 6px 12px;
+            margin: 0 auto;
+            background: linear-gradient(180deg, #6dec06 0%, #07e91a 50%, #04ee79 100%);
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+
+        .cb-abouttext {
+            padding: 6px 12px;
+        }
+        </style>
         <link href="sanitize.css" rel="stylesheet"/>
     </head>
 
@@ -24,16 +75,44 @@
             </ul>
         </div>
         <div class="contentbox">
-            <div class="cb-maintext">
-                <p>
-                    SECTION IN CONSTRUCTION. CHECK BACK LATER...
-                </p>
+            <div class="cb-child">
+                <div class="cb-avatarbox">
+                    <img src="cyan.jpg" alt="Profile">
+                </div>
+                <div class="cb-infotext">
+                    <h1 style="margin: 0px;">cyan476</h1>
+                    <h3 style="margin: 1px;">creator of CWL, a peabrained idiot</h3>
+                    <p style="margin: 1px;"><i>"some ppl are smart, some ppl are dumb, im worse than that"</i><br>-cyan476</p>
+                    <div class="li-buttons">
+                        <a href="https://www.youtube.com/@cyan476" class="ytbutton" alt="my channel">Youtube!</a>
+                        <a href="https://discord.com/users/1478745349165416613" class="dcbutton" alt="my discord">Discord!</a>
+                        <a href="https://github.com/cyan476" class="ghbutton" alt="my github">Github!</a>
+                        <a href="mailto:cyangamer476@gmail.com" class="mtbutton" alt="my gmail">Gmail!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cb-about">
+                <div class="cb-aboutbar">
+                    <h1>About</h1>
+                </div>
+                <div class="cb-abouttext">
+                    <p>
+                        <b>Name:</b> cyan476, or cyangamer476, yada yada<br>
+                        <b>Age:</b> i dooooont wanna tell you that sorry<br>
+                        <b>Country:</b> Indonesia, so im also Asian technically<br>
+                        <b>Gender/Pronouns:</b> male, he/him<br>
+                        <b>OS:</b> unnecesary but arch linux, no im not a fat chair dweller<br>
+                        <b>Programming:</b> i only know html, css, and gdscript, not much really<br>
+                        <b>Hobbies:</b> anything but doing nothing<br>
+                        <b>Shoutouts:</b> <a href="kicya.net">kicya</a> for making <a href="nya.je">nya.je</a> available for free!
+                    </p>
+                </div>
             </div>
         </div>
         <div class="footer">
             <div class="ft-content">
                 <div class="ft-text">
-                    Made with love by cyan476, coded using <a href="https://vscodium.com/">VSCodium<a>
+                    Made with love by cyan476, coded using <a href="https://vscodium.com/">VSCodium</a>
                 </div>
                 <a href="#"><img src="button.png" alt="Cyan's Web World!" class="ft-buttonimg"></a>
             </div>
