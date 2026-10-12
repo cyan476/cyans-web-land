@@ -2,19 +2,36 @@
 <rss version="2.0">
   <channel>
     <title>Cyan's Web Land</title>
-    <link>https://cyanswebland.nya.je</link>
+    <link>https://cyanswebland.nya.je/</link>
     <description>updates from your local idiot named cyan!!</description>
+    <language>en-us</language>
+    <managingEditor>cyangamer476@gmail.com (Cyan)</managingEditor>
+    <webMaster>cyangamer476@gmail.com (Cyan)</webMaster>
+    <generator>pyWriter RSS Manager</generator>
+    <docs>https://www.rssboard.org/rss-specification</docs>
     <item>
       <title>Welcome to LAUNCH DAY BABY!!!</title>
       <description>&lt;p&gt;THE SITES LIVE!!!!&lt;/p&gt;&lt;p&gt;Its officially live now with&lt;/p&gt;&lt;ul&gt;&lt;li&gt;kicya's ddns, nya.je (huge props to them)&lt;/li&gt;&lt;li&gt;new blog, which is working, and is using a rss-to-html parser made in js&lt;/li&gt;&lt;li&gt;and lots more planned!&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;so yeah great job me!! and sub to this rss feed which the link is available on the blog's mainpage!!&lt;/p&gt;</description>
-      <pubDate>Sun, 11 Oct 2026 11:02:53 GMT</pubDate>
+      <pubDate>Sun, 11 Sept 2026 11:02:53 GMT</pubDate>
       <guid>post-1</guid>
+      <author>cyangamer476@gmail.com</author>
+      <source url="https://cyanswebland.nya.je/">Cyan's Web Land</source>
     </item>
     <item>
       <title>New update bois!!</title>
       <description>&lt;p&gt;yaey!!!&lt;/p&gt;&lt;p&gt;new update as i said before&lt;/p&gt;&lt;ul&gt;&lt;li&gt;about me page (finally god)&lt;/li&gt;&lt;li&gt;some slight updates&lt;/li&gt;&lt;li&gt;&lt;a href="https://cyanswebland.nya.je/userbar.png"&gt;the userbar which i forgot to tell yall about&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;so im pretty happy of how it turned out, and to tell yall i wrote this feed inside my python rss feed writer!&lt;/p&gt;</description>
       <pubDate>Sat, 03 Oct 2026 19:10:00 GMT</pubDate>
       <guid>post-2</guid>
+      <author>cyangamer476@gmail.com</author>
+      <source url="https://cyanswebland.nya.je/">Cyan's Web Land</source>
+    </item>
+    <item>
+      <title>additions and announcements</title>
+      <description>&lt;p&gt;additons, obv&lt;/p&gt;&lt;ul&gt;&lt;li&gt;a favicon&lt;/li&gt;&lt;li&gt;a forum (will be revealed later)&lt;/li&gt;&lt;li&gt;enhancements to the rss&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;there isnt much shit going on but forums are gonna have ads sorry, and in the future there will be more updates&lt;/p&gt;</description>
+      <pubDate>Mon, 12 Oct 2026 04:23:07 GMT</pubDate>
+      <guid>post-3</guid>
+      <author>cyangamer476@gmail.com</author>
+      <source url="https://cyanswebland.nya.je/">Cyan's Web Land</source>
     </item>
   </channel>
 </rss>
