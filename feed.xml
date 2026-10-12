@@ -9,6 +9,11 @@
     <webMaster>cyangamer476@gmail.com (Cyan)</webMaster>
     <generator>pyWriter RSS Manager</generator>
     <docs>https://www.rssboard.org/rss-specification</docs>
+    <image>
+      <url>https://cyanswebland.nya.je/favicon.ico</url>
+      <title>Cyan's Web Land</title>
+      <link>https://cyanswebland.nya.je/</link>
+    </image>
     <item>
       <title>Welcome to LAUNCH DAY BABY!!!</title>
       <description>&lt;p&gt;THE SITES LIVE!!!!&lt;/p&gt;&lt;p&gt;Its officially live now with&lt;/p&gt;&lt;ul&gt;&lt;li&gt;kicya's ddns, nya.je (huge props to them)&lt;/li&gt;&lt;li&gt;new blog, which is working, and is using a rss-to-html parser made in js&lt;/li&gt;&lt;li&gt;and lots more planned!&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;so yeah great job me!! and sub to this rss feed which the link is available on the blog's mainpage!!&lt;/p&gt;</description>
